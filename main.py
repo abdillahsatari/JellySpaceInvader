@@ -54,7 +54,6 @@ for i in range(num_of_enemies):
 bulletImg = pygame.image.load('bullet.png')
 bulletX = 0
 bulletY = 480
-bulletX_change = 0
 bulletY_change = 10
 bullet_state = "ready"
 
@@ -64,7 +63,7 @@ score_value = 0
 font = pygame.font.Font('freesansbold.ttf', 32)
 
 textX = 10
-testY = 10
+textY = 10
 
 # Game Over
 over_font = pygame.font.Font('freesansbold.ttf', 64)
@@ -182,5 +181,5 @@ while running:
         bulletY -= bulletY_change
 
     player(playerX, playerY)
-    show_score(textX, testY)
+    show_score(textX, textY)
     pygame.display.update()
